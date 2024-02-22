@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-17T06:53:39.578Z</updated>
+  <updated>2024-02-22T03:44:23.798Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Terminus——我对编程语言的设想</title>
+    <link href="http://example.com/2024/02/22/Terminus-My-imagine/"/>
+    <id>http://example.com/2024/02/22/Terminus-My-imagine/</id>
+    <published>2024-02-22T03:40:13.000Z</published>
+    <updated>2024-02-22T03:44:23.798Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; 标题：探索Terminus编程语言：一个现代化的编程构想&lt;/p&gt;
+&lt;p&gt;Hi!</summary>
+        
+      
+    
+    
+    
+    
+    <category term="编程心得" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>Telegram频道开办啦！</title>
