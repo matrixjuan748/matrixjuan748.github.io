@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-22T03:44:23.798Z</updated>
+  <updated>2024-03-11T10:09:32.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django-project</title>
+    <link href="http://example.com/2024/03/11/Django-project/"/>
+    <id>http://example.com/2024/03/11/Django-project/</id>
+    <published>2024-03-11T09:37:44.000Z</published>
+    <updated>2024-03-11T10:09:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;我们的新征途：打造一个学习笔记项目&quot;&gt;&lt;a href=&quot;#我们的新征途：打造一个学习笔记项目&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Terminus——我对编程语言的设想</title>
