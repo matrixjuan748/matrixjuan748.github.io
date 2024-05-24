@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-04T15:01:58.817Z</updated>
+  <updated>2024-05-24T03:04:49.017Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>社巡介绍</title>
+    <link href="http://example.com/2024/05/24/shexun/"/>
+    <id>http://example.com/2024/05/24/shexun/</id>
+    <published>2024-05-24T02:53:55.000Z</published>
+    <updated>2024-05-24T03:04:49.017Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在当今数字化时代，编程已经成为一种必备的技能，而创意编程更是将编程与创意相结合，培养学生的创造力和逻辑思维能力。位于福州的二中Python创意编程社，正是一个致力于推广创意编程的学生社团。本文将介绍这个充满活力和创意的社团。&lt;/p&gt;
+&lt;h3 id=&quot;社团背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>考后反思</title>
