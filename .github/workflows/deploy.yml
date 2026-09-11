@@ -1,0 +1,58 @@
+name: Hexo Blog CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # 支持在 Actions 页面手动触发
+
+# GITHUB_TOKEN 需要写权限才能推送 gh-pages 分支
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 拉取源码（含子模块，主题若是 submodule 必须加 recursive）
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # 2. 安装 Node.js 并开启 npm 缓存
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '26'
+          cache: 'npm'
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      # 4. 生成静态文件
+      - name: Hexo generate
+        run: npx hexo clean && npx hexo generate
+
+      # 5. 推送到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
+          # 自定义域名：public 目录里如果没有 CNAME，可在这里指定
+          # cname: blog.example.com
+          # 强制推送，避免历史提交堆积
+          force_orphan: true
