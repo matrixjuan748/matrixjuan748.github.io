@@ -17,10 +17,7 @@ comments: false
 ## 联系我
 
 - GitHub：<https://github.com/matrixjuan748>
-- 邮箱：把你的邮箱写在这里
-
+- 邮箱：weiminghuang348@gmail.com
 ## 关于本站
 
 本站使用 [Hexo](https://hexo.io/) 搭建，主题是 [NexT](https://theme-next.js.org/)，部署在 GitHub Pages 上。
-
-> 如需修改本页内容，直接编辑 `source/about/index.md` 即可，改完执行 `hexo clean && hexo generate` 重新生成。
