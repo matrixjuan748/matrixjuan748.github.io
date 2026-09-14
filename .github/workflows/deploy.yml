@@ -15,11 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 拉取源码（含子模块，主题若是 submodule 必须加 recursive）
+      # 1. 拉取源码（主题由 npm 安装到 node_modules，无需 submodule）
       - name: Checkout source
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
 
       # 2. 安装 Node.js 并开启 npm 缓存

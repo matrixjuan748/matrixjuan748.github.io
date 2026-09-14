@@ -6,3 +6,8 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 主题通过 npm 安装（见 package.json 的 hexo-theme-next），Hexo 会自动从
+# node_modules/hexo-theme-next 加载，无需把主题源码放进仓库。
+# 忽略此目录是为了防止再次把主题目录提交成无效的 submodule 记录（会让 GitHub Actions 检出失败）。
+themes/next/
