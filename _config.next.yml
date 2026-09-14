@@ -1,14 +1,23 @@
 # ===============================================================
 # NexT 主题个性化配置（Alternate Theme Config）
 # ---------------------------------------------------------------
-# 本文件的配置会「深度合并」并覆盖 themes/next/_config.yml 中的默认值，
-# 所以这里只写你需要改的项即可，将来升级主题也不会丢配置。
-# 全部可配置项请参考：themes/next/_config.yml
+# 本文件的配置会「深度合并」并覆盖主题默认配置（node_modules/hexo-theme-next/_config.yml），
+# 所以这里只写你需要改的项即可；主题升级、重装依赖都不会丢配置。
+# 全部可配置项请参考：node_modules/hexo-theme-next/_config.yml
 # 官方文档：https://theme-next.js.org/docs/getting-started/configuration
 # ===============================================================
 
 # 界面语言在 Hexo 的 _config.yml 里设置：language: zh-CN
-# NexT 会自动加载 themes/next/languages/zh-CN.yml 里的中文文案（首页、归档、阅读全文等）。
+# NexT 会自动加载语言包（node_modules/hexo-theme-next/languages/zh-CN.yml）里的中文文案。
+
+# ---------------------------------------------------------------
+# 配色方案（Scheme）
+# 必须显式写在这里（而不是改 node_modules 里的主题配置）：
+# node_modules 不入库，CI 用的是 npm 原版主题，其默认值是 Muse，
+# 只在本地改主题文件会导致「本地预览 ≠ 线上效果」。
+# 可选值：Muse(经典单栏) | Mist | Pisces | Gemini
+# ---------------------------------------------------------------
+scheme: Gemini
 
 # ---------------------------------------------------------------
 # 菜单
