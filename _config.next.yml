@@ -1,0 +1,35 @@
+# ===============================================================
+# NexT 主题个性化配置（Alternate Theme Config）
+# ---------------------------------------------------------------
+# 本文件的配置会「深度合并」并覆盖 themes/next/_config.yml 中的默认值，
+# 所以这里只写你需要改的项即可，将来升级主题也不会丢配置。
+# 全部可配置项请参考：themes/next/_config.yml
+# 官方文档：https://theme-next.js.org/docs/getting-started/configuration
+# ===============================================================
+
+# 界面语言在 Hexo 的 _config.yml 里设置：language: zh-CN
+# NexT 会自动加载 themes/next/languages/zh-CN.yml 里的中文文案（首页、归档、阅读全文等）。
+
+# ---------------------------------------------------------------
+# 菜单
+# 格式：`键名: /链接/ || 图标`，键名会自动翻译成中文
+# （zh-CN 语言包已包含 home=首页、about=关于、archives=归档 等）
+# ---------------------------------------------------------------
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  archives: /archives/ || fa fa-archive
+  #tags: /tags/ || fa fa-tags
+  #categories: /categories/ || fa fa-th
+
+menu_settings:
+  icons: true
+  badges: false
+
+# ---------------------------------------------------------------
+# 自定义文案：会合并进指定语言包，可用于新增菜单项的中文翻译
+# ---------------------------------------------------------------
+#languages:
+#  zh-CN:
+#    menu:
+#      mypage: 我的小站
